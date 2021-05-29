@@ -3,7 +3,7 @@
 ## Asp.net MVC 5
 
 Add below entry in the `Global.asax.cs`, 
-```[csharp]
+```csharp
   ControllerBuilder.Current
       .SetControllerFactory(
           new DIControllerFactory(
@@ -14,7 +14,7 @@ Add below entry in the `Global.asax.cs`,
 ```
 Now in your controller, there is no need to inject / and instantiate any dependency
 
-```[csharp]
+```csharp
 
 using Msfx.DI.Attributes;
 using Msfx.DI.Extensions.Samples.AspMvc5.Services;
