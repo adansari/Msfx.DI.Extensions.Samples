@@ -30,7 +30,7 @@ namespace Msfx.DI.Extensions.Samples.AspMvc5.Controllers
 {
     public class HomeController : Controller
     {
-        [AutoInject] // <- Add this attribute
+        [AutoInject] // <- Add this attribute and [Injectable] attribute in the HomeService class
         public HomeService homeService; // This service class will be injected automatically
         public ActionResult Index()
         {
